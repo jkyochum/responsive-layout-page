@@ -1,2 +1,1 @@
-# responsive-layout-page
- Responsive profile page
+#Treehouse Project 2 - Responsive Profile Page
