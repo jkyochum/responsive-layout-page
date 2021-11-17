@@ -1,0 +1,285 @@
+/*--- Base Styles ---*/
+
+* {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+body {
+  margin: 0;
+  font-family: "Quattrocento", sans-serif;
+  background-color: rgb(248, 248, 248);
+}
+
+.main-header,
+.nav,
+.flex,
+section,
+.bio-wrapper,
+.top-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-wrapper {
+  width: 100%;
+}
+
+.name {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.main-nav {
+  width: 100%;
+}
+
+.nav {
+  padding: 0;
+}
+
+.nav li {
+  list-style-type: none;
+  background-color: #fff;
+  margin-bottom: 0.5em;
+  text-align: center;
+  padding: 0;
+  width: 90%;
+}
+
+.nav li a {
+  display: block;
+  padding: 0.8em 1em;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+
+.main-header img {
+  margin: auto;
+}
+
+main {
+  background-color: #fff;
+}
+
+section img {
+  max-width: 400px;
+}
+
+.main-bio {
+  text-align: center;
+  padding: 2em;
+  line-height: 1.5;
+  font-size: 1.2em;
+}
+
+.portfolio-heading {
+  padding: 2.5em 0 2em 0;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+section h2 {
+  margin-bottom: 0;
+}
+
+section p {
+  width: 80%;
+  text-align: center;
+}
+
+p a {
+  text-decoration: none;
+}
+
+.contact {
+  background-color: rgb(248, 248, 248);
+  width: 100%;
+  padding: 40px 0;
+  margin-bottom: 0;
+}
+
+.contact .phone-number a,
+.contact .email a {
+  color: rgb(68, 64, 64);
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(80, 80, 80, 0.5);
+  margin: 20px 20px 10px 20px;
+  padding-top: 10px;
+}
+
+.main-footer p,
+.main-footer p a {
+  color: rgb(68, 64, 64);
+  font-weight: bold;
+}
+
+#home-footer,
+#portfolio-footer,
+#contact-footer {
+  display: none;
+}
+
+/*--- Media Queries ---*/
+
+@media screen and (min-width: 768px) {
+  .main-header,
+  .nav {
+    flex-direction: row;
+  }
+
+  .main-header {
+    flex-wrap: wrap;
+  }
+
+  .name {
+    margin-top: 50px;
+  }
+
+  .nav {
+    justify-content: center;
+  }
+
+  .nav li {
+    background-color: rgb(248, 248, 248);
+    width: 20%;
+  }
+
+  .bio-wrapper {
+    flex-direction: row;
+    margin: 3em 1em;
+  }
+
+  .bio-wrapper img {
+    width: 40%;
+    margin: 0;
+    align-self: flex-start;
+  }
+
+  .main-bio {
+    order: -1;
+    align-self: flex-start;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  section {
+    width: 45%;
+    margin: 1em;
+  }
+
+  section img {
+    width: 100%;
+  }
+
+  section p {
+    line-height: 1.5;
+  }
+
+  .contact {
+    margin: 0;
+  }
+
+  .contact p {
+    line-height: 1;
+  }
+
+  .main-footer {
+    justify-content: space-between;
+    margin-bottom: 3em;
+  }
+
+  .flex-footer {
+    display: flex;
+  }
+
+  .flex-footer p {
+    margin-left: 2em;
+  }
+
+  #back-to-top {
+    display: none;
+  }
+
+  #home-footer,
+  #portfolio-footer,
+  #contact-footer {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    margin: 2em;
+    padding: 1em;
+  }
+
+  .main-bio,
+  .contact p {
+    font-size: 1.5em;
+    font-weight: normal;
+  }
+
+  .top-wrapper {
+    flex-direction: row;
+    margin: 4em 1em 1em 1em;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .main-nav {
+    align-items: flex-end;
+    align-self: flex-end;
+    width: 40%;
+    justify-content: space-between;
+  }
+
+  .name {
+    margin: 0;
+  }
+
+  .nav {
+    margin: 0;
+    align-self: flex-end;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+
+  .nav li {
+    margin-bottom: 0;
+  }
+
+  .bio-wrapper {
+    margin-top: 5em;
+  }
+
+  .bio-wrapper img {
+    width: 70%;
+  }
+
+  section {
+    width: 29%;
+  }
+
+  .main-footer {
+    margin: 4em 4em 0;
+  }
+}
