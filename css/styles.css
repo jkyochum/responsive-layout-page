@@ -64,7 +64,7 @@ main {
 }
 
 section img {
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .main-bio {
@@ -164,6 +164,7 @@ p a {
     width: 40%;
     margin: 0;
     align-self: flex-start;
+    min-width: 300px;
   }
 
   .main-bio {
