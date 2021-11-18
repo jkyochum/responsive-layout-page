@@ -48,11 +48,17 @@ section,
   text-align: center;
   padding: 0;
   width: 90%;
+  min-width: 95px;
+  border-bottom: 2px solid transparent;
+}
+
+nav li:hover {
+  border-bottom: 2px solid green;
 }
 
 .nav li a {
   display: block;
-  padding: 0.8em 1em;
+  padding: 0.8em 0;
   text-decoration: none;
   font-weight: bold;
   color: #000;
@@ -153,6 +159,14 @@ article p {
 .main-footer p a {
   color: rgb(68, 64, 64);
   font-weight: bold;
+}
+
+.main-footer p {
+  border-bottom: 2px solid transparent;
+}
+
+.main-footer p:hover {
+  border-bottom: 2px solid green;
 }
 
 #home-footer,
