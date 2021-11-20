@@ -11,6 +11,10 @@ body {
   background-color: rgb(248, 248, 248);
 }
 
+body img {
+  width: 100%;
+}
+
 .main-header h1,
 .main-footer h4 {
   font-family: "Comfortaa", sans-serif;
@@ -70,8 +74,9 @@ nav li:hover {
   color: #000;
 }
 
-.main-header img {
+.bio-wrapper img {
   margin: auto;
+  width: 65%;
 }
 
 main {
@@ -80,6 +85,7 @@ main {
 
 section img {
   max-width: 500px;
+  width: 90%;
 }
 
 .main-bio {
@@ -99,7 +105,7 @@ section {
 }
 
 section h2 {
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 section h3 {
@@ -146,6 +152,10 @@ article p {
   margin-bottom: 0;
 }
 
+.contact p {
+  line-height: 1.5;
+}
+
 .contact .phone-number a,
 .contact .email a {
   color: rgb(68, 64, 64);
@@ -165,6 +175,7 @@ article p {
   border-top: 1px solid rgba(80, 80, 80, 0.5);
   margin: 20px 20px 10px 20px;
   padding-top: 10px;
+  align-items: center;
 }
 
 .main-footer p,
@@ -230,6 +241,7 @@ article p {
     align-self: flex-start;
     padding-top: 0;
     margin-top: 0;
+    text-align: left;
   }
 
   .flex {
@@ -266,10 +278,6 @@ article p {
     margin: 0;
   }
 
-  .contact p {
-    line-height: 1;
-  }
-
   .main-footer {
     justify-content: space-between;
     margin-bottom: 3em;
@@ -297,8 +305,8 @@ article p {
 
 @media screen and (min-width: 1024px) {
   body {
-    margin: 2em;
-    padding: 1em;
+    margin: 0 2em 2em;
+    padding: 0 1em 1em;
   }
 
   .main-bio,
